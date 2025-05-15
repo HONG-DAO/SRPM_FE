@@ -1,0 +1,27 @@
+{
+    "title": "Ứng dụng quản lý đề tài nghiên cứu khoa học cấp trường",
+    "shortname": "SRPM",
+    "description": "Hệ thống hiện đại hoá quy trình đề xuất, xét duyệt và quản lý các đề tài nghiên cứu trong trường.",
+    "roles": {
+      "researcher": "Thành viên nghiên cứu",
+      "leadResearcher": "Nhà nghiên cứu chính",
+      "organization": "Cơ quan chủ quản",
+      "reviewer": "Hội đồng thẩm định",
+      "staff": "Nhân viên",
+      "admin": "Quản trị viên"
+    },
+    "actions": {
+      "login": "Đăng nhập",
+      "register": "Đăng ký với @fe.edu.vn",
+      "viewProjects": "Xem danh sách đề tài",
+      "submitProposal": "Nộp đề xuất",
+      "dashboard": "Bảng điều khiển"
+    },
+    "features": {
+      "realtime": "Thông báo thời gian thực",
+      "taskTracking": "Theo dõi tiến độ",
+      "funding": "Yêu cầu tài trợ",
+      "evaluation": "Đánh giá đề tài"
+    }
+  }
+  

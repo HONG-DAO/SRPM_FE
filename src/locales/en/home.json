@@ -1,0 +1,27 @@
+{
+    "title": "School-Level Scientific Research Project Management",
+    "shortname": "SRPM",
+    "description": "A system to modernize the process of proposing, approving, and managing research projects within the school.",
+    "roles": {
+      "researcher": "Research Member",
+      "leadResearcher": "Lead Researcher",
+      "organization": "Managing Organization",
+      "reviewer": "Review Board",
+      "staff": "Staff",
+      "admin": "Administrator"
+    },
+    "actions": {
+      "login": "Sign In",
+      "register": "Register with @fe.edu.vn",
+      "viewProjects": "View Projects",
+      "submitProposal": "Submit Proposal",
+      "dashboard": "Dashboard"
+    },
+    "features": {
+      "realtime": "Real-time Notifications",
+      "taskTracking": "Task Tracking",
+      "funding": "Funding Request",
+      "evaluation": "Project Evaluation"
+    }
+  }
+  

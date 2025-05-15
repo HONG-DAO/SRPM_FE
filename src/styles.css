@@ -1,0 +1,401 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hover-link {
+    @apply hover:text-[#1569CB] hover:underline transition-colors duration-200;
+  }
+  
+  .section-title-shadow {
+    @apply drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] font-bold;
+  }
+
+  /* Thêm các utility classes cho animation */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .fade-in {
+    @apply opacity-0 animate-[fadeIn_0.3s_ease-in-out_forwards];
+  }
+
+  .slide-up {
+    @apply translate-y-4 opacity-0 animate-[slideUp_0.3s_ease-in-out_forwards];
+  }
+
+  .slide-in {
+    @apply -translate-x-4 opacity-0 animate-[slideIn_0.3s_ease-in-out_forwards];
+  }
+
+  .scale-hover {
+    @apply transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  /* Thêm utility classes mới */
+  .slide-up-delayed {
+    @apply translate-y-4 opacity-0 animate-[slideUpDelayed_0.3s_ease-in-out_forwards];
+  }
+
+  .slide-up-staggered {
+    @apply translate-y-4 opacity-0;
+    animation: slideUp 0.3s ease-in-out forwards var(--delay, 0s);
+  }
+
+  .fade-in-scale {
+    @apply scale-95 opacity-0 animate-[fadeInScale_0.3s_ease-in-out_forwards];
+  }
+}
+
+/* Thêm keyframes cho animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpDelayed {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/SVN-Gotham.woff2') format('woff2'),
+       url('/fonts/SVN-Gotham.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SVN-Gotham-Book';
+  src: url('/fonts/SVN-Gotham-Book.woff2') format('woff2'),
+       url('/fonts/SVN-Gotham-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SVN-Gotham-Light';
+  src: url('/fonts/SVN-Gotham-Light.woff2') format('woff2'),
+       url('/fonts/SVN-Gotham-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SVN-Gotham-Black';
+  src: url('/fonts/SVN-Gotham-Black.woff2') format('woff2'),
+       url('/fonts/SVN-Gotham-Black.woff') format('woff');
+}
+
+@layer base {
+  :root {
+    --background: 60 33% 97%;
+    --foreground: 210 29% 24%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 24%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 24%;
+    --primary: 210 29% 24%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 212 80% 44%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 210 29% 24%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 216 34% 17%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+/* Thêm vào file CSS của bạn */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-text-security {
+  text-security: disc;
+}
+
+/* Thêm vào cuối file */
+.nsm7Bb-HzV7m-LgbsSe {
+  position: relative !important;
+  background: #FAF9F6 !important;
+  border: 1px solid #E5E7EB !important;
+  height: 48px !important;
+  border-radius: 8px !important;
+  color: #2C3E50 !important;
+  font-family: 'SVN-Gotham-Regular', sans-serif !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 16px !important;
+  /* Thêm transition cho Google button */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.nsm7Bb-HzV7m-LgbsSe:hover {
+  background: #f3f4f6 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.nsm7Bb-HzV7m-LgbsSe:active {
+  transform: translateY(0) !important;
+}
+
+/* Ẩn text gốc */
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+  opacity: 0 !important;
+}
+
+/* Thêm text mới */
+.nsm7Bb-HzV7m-LgbsSe:before {
+  content: "Sign in with Google" !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #2C3E50 !important;
+  font-family: 'SVN-Gotham-Regular', sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* Style cho icon Google */
+.nsm7Bb-HzV7m-LgbsSe .google-icon {
+  position: absolute !important;
+  left: 16px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* Thêm animations cho form inputs */
+.form-input {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.form-input:focus {
+  @apply transform scale-[1.01];
+}
+
+/* Animation cho error/success messages */
+.message-animation {
+  @apply animate-[messageSlide_0.3s_ease-in-out_forwards];
+}
+
+@keyframes messageSlide {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation cho dialog */
+.dialog-overlay {
+  @apply fixed inset-0 bg-black/50;
+  animation: overlayShow 0.2s ease-in-out forwards;
+}
+
+.dialog-content {
+  @apply relative bg-[#FAF9F6] rounded-lg p-8 max-w-md w-full mx-4;
+  animation: contentShow 0.3s ease-in-out forwards;
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Animation cho form transitions */
+.form-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.form-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.form-transition-exit {
+  opacity: 1;
+}
+
+.form-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Cải thiện animation cho input fields */
+.input-animation {
+  @apply transition-all duration-200;
+}
+
+.input-animation:focus {
+  @apply transform scale-[1.02] shadow-lg;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Animation cho buttons */
+.button-animation {
+  @apply transition-all duration-200;
+}
+
+.button-animation:hover {
+  @apply transform -translate-y-0.5 shadow-md;
+}
+
+.button-animation:active {
+  @apply transform translate-y-0 shadow-sm;
+}
+
+/* Animation cho verification code input */
+.verification-input {
+  @apply transition-all duration-200;
+}
+
+.verification-input:focus {
+  @apply transform scale-[1.05] shadow-md;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Success message animation */
+.success-message {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

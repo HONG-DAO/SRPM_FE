@@ -1,0 +1,27 @@
+node:internal/fs/watchers:247
+    const error = new UVException({
+                  ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/home/hongdao/Documents/Project_Group3/NCKH_FE/vite.config.ts'
+[90m    at FSWatcher.<computed> (node:internal/fs/watchers:247:19)[39m
+[90m    at Object.watch (node:fs:2491:36)[39m
+    at createFsWatchInstance [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:42780:17[90m)[39m
+    at setFsWatchListener [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:42827:15[90m)[39m
+    at NodeFsHandler._watchWithNodeFs [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:42982:14[90m)[39m
+    at NodeFsHandler._handleFile [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:43046:23[90m)[39m
+    at NodeFsHandler._addToNodeFs [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:43288:21[90m)[39m
+    at async [90mfile:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:44285:21
+    at async Promise.all (index 1)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:44481:10[90m)[39m
+    at NodeFsHandler._addToNodeFs [90m(file:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:43296:18[90m)[39m
+    at async [90mfile:///home/hongdao/Documents/Project_Group3/NCKH_FE/[39mnode_modules/[4mvite[24m/dist/node/chunks/dep-C6uTJdX2.js:44285:21
+    at async Promise.all (index 1) {
+  errno: [33m-28[39m,
+  syscall: [32m'watch'[39m,
+  code: [32m'ENOSPC'[39m,
+  path: [32m'/home/hongdao/Documents/Project_Group3/NCKH_FE/vite.config.ts'[39m,
+  filename: [32m'/home/hongdao/Documents/Project_Group3/NCKH_FE/vite.config.ts'[39m
+}
+
+Node.js v20.19.1

@@ -1,0 +1,549 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.1",
+  "pathMappings": {
+    "@cnpm/*": [
+      "src/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "my-tailwind-app": [
+        {
+          "file": "my-tailwind-app/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "my-tailwind-app/README.md",
+          "hash": "13160460843517416105"
+        },
+        {
+          "file": "my-tailwind-app/eslint.config.js",
+          "hash": "16145672096969245511",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:globals",
+            "npm:eslint-plugin-react-hooks",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "my-tailwind-app/index.html",
+          "hash": "4025202329384162906"
+        },
+        {
+          "file": "my-tailwind-app/package-lock.json",
+          "hash": "10479334102634539113"
+        },
+        {
+          "file": "my-tailwind-app/package.json",
+          "hash": "2368834901205880777",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@types/react@19.1.4",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:globals",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite@6.3.5",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "my-tailwind-app/postcss.config.js",
+          "hash": "1121830044826443979"
+        },
+        {
+          "file": "my-tailwind-app/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "my-tailwind-app/src/App.css",
+          "hash": "3739391659270974612"
+        },
+        {
+          "file": "my-tailwind-app/src/App.tsx",
+          "hash": "9561001225065465909",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "my-tailwind-app/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "my-tailwind-app/src/index.css",
+          "hash": "13504153635654440336"
+        },
+        {
+          "file": "my-tailwind-app/src/main.tsx",
+          "hash": "11038211546439381838",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "my-tailwind-app/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "my-tailwind-app/tailwind.config.js",
+          "hash": "1620497832093742526"
+        },
+        {
+          "file": "my-tailwind-app/tsconfig.app.json",
+          "hash": "3992348939299782212"
+        },
+        {
+          "file": "my-tailwind-app/tsconfig.json",
+          "hash": "2365188958523842680"
+        },
+        {
+          "file": "my-tailwind-app/tsconfig.node.json",
+          "hash": "3588689360788834997"
+        },
+        {
+          "file": "my-tailwind-app/vite.config.ts",
+          "hash": "16225914092815047172",
+          "deps": [
+            "npm:vite@6.3.5",
+            "npm:@vitejs/plugin-react"
+          ]
+        }
+      ],
+      "cnpm": [
+        {
+          "file": ".env",
+          "hash": "3328911960148759975"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": ".hintrc",
+          "hash": "17855454579832381556"
+        },
+        {
+          "file": ".yarnrc.yml",
+          "hash": "9773565372686775399"
+        },
+        {
+          "file": "README.md",
+          "hash": "13160460843517416105"
+        },
+        {
+          "file": "components.json",
+          "hash": "11738164967971207906"
+        },
+        {
+          "file": "eslint.config.js",
+          "hash": "18136715864555996736",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "index.html",
+          "hash": "16396337419710630064"
+        },
+        {
+          "file": "nx.json",
+          "hash": "9706462007831065814"
+        },
+        {
+          "file": "package.json",
+          "hash": "15047511184212952229",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@nx/devkit",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/js",
+            "npm:@nx/playwright",
+            "npm:@nx/react",
+            "npm:@nx/vite",
+            "npm:@nx/web",
+            "npm:@nx/workspace",
+            "npm:@playwright/test",
+            "npm:@swc-node/register",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@tanstack/eslint-plugin-query",
+            "npm:@testing-library/react",
+            "npm:@types/d3-format",
+            "npm:@types/d3-time-format",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@types/react-router-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/coverage-v8",
+            "npm:@vitest/ui",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-playwright",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jsdom",
+            "npm:nx",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:tailwindcss",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:vitest",
+            "npm:@casl/ability",
+            "npm:@casl/react",
+            "npm:@heroicons/react",
+            "npm:@radix-ui/react-alert-dialog",
+            "npm:@radix-ui/react-avatar",
+            "npm:@radix-ui/react-dialog",
+            "npm:@radix-ui/react-menubar",
+            "npm:@radix-ui/react-separator",
+            "npm:@radix-ui/react-slot",
+            "npm:@radix-ui/react-tooltip",
+            "npm:@react-financial-charts/annotations",
+            "npm:@react-financial-charts/axes",
+            "npm:@react-financial-charts/coordinates",
+            "npm:@react-financial-charts/indicators",
+            "npm:@react-financial-charts/interactive",
+            "npm:@react-financial-charts/series",
+            "npm:@react-financial-charts/tooltip",
+            "npm:@react-financial-charts/utils",
+            "npm:@react-oauth/google",
+            "npm:@tanstack/react-query",
+            "npm:@tanstack/react-query-devtools",
+            "npm:apexcharts",
+            "npm:axios",
+            "npm:chart.js",
+            "npm:chartjs-adapter-date-fns",
+            "npm:chartjs-chart-financial",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:d3",
+            "npm:d3-format",
+            "npm:d3-time-format",
+            "npm:dayjs",
+            "npm:dotenv",
+            "npm:formik",
+            "npm:i18next",
+            "npm:jwt-decode",
+            "npm:lucide-react",
+            "npm:moment",
+            "npm:moment-timezone",
+            "npm:react",
+            "npm:react-apexcharts",
+            "npm:react-chartjs-2",
+            "npm:react-d3-axis",
+            "npm:react-dom",
+            "npm:react-financial-charts",
+            "npm:react-i18next",
+            "npm:react-icons",
+            "npm:react-router-dom",
+            "npm:react-toastify",
+            "npm:recharts",
+            "npm:shadcn-cli",
+            "npm:shadcn-ui",
+            "npm:socket.io",
+            "npm:socket.io-client",
+            "npm:tailwind-merge",
+            "npm:tailwind-scrollbar-hide",
+            "npm:tailwindcss-animate",
+            "npm:toastify",
+            "npm:victory",
+            "npm:victory-chart",
+            "npm:vite-tsconfig-paths",
+            "npm:yarn",
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "project.json",
+          "hash": "14690660575003423352"
+        },
+        {
+          "file": "public/images.jpeg",
+          "hash": "2171559228581418362"
+        },
+        {
+          "file": "public/images/download (1).jpeg",
+          "hash": "711581090774610528"
+        },
+        {
+          "file": "public/images/images1.png",
+          "hash": "3479805116032819782"
+        },
+        {
+          "file": "public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "src/app/app.spec.tsx",
+          "hash": "5542615320256913024",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "src/app/app.tsx",
+          "hash": "16904431463450437000",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@react-oauth/google"
+          ]
+        },
+        {
+          "file": "src/app/nx-welcome.tsx",
+          "hash": "11014967127052082266"
+        },
+        {
+          "file": "src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "src/components/Protect/AuthLayout.tsx",
+          "hash": "9352693911210191922",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/components/Protect/PublicRoute.tsx",
+          "hash": "14962962224724910641",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/components/Sign In/LoginForm.tsx",
+          "hash": "3789748321573031783",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "src/components/Sign In/NewPassWordForm.tsx",
+          "hash": "15043673869551513888",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "src/components/Sign In/ResetCodeForm.tsx",
+          "hash": "2117138873468026487",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "src/components/Sign Up/DetailsForm.tsx",
+          "hash": "1153797181469802111",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/components/Sign Up/GoogleForm.tsx",
+          "hash": "5397404212509075213",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup"
+          ]
+        },
+        {
+          "file": "src/components/Sign Up/VerificationDialog.tsx",
+          "hash": "16214891499033651700",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/components/ui/button.tsx",
+          "hash": "17804482923991153709",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority"
+          ]
+        },
+        {
+          "file": "src/components/ui/input.tsx",
+          "hash": "13649277834125760017",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "src/context/AuthContext.tsx",
+          "hash": "5472789045373484377",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/env.d.ts",
+          "hash": "11016168124724967822"
+        },
+        {
+          "file": "src/i18n/i18n.ts",
+          "hash": "17717553934123311592",
+          "deps": [
+            "npm:i18next",
+            "npm:react-i18next"
+          ]
+        },
+        {
+          "file": "src/lib/utils.ts",
+          "hash": "6483145186850064023",
+          "deps": [
+            "npm:clsx",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "src/locales/en/home.json",
+          "hash": "15946693221110358903"
+        },
+        {
+          "file": "src/locales/vi/home.json",
+          "hash": "18121643604651804553"
+        },
+        {
+          "file": "src/main.tsx",
+          "hash": "6417444255490778096",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:@tanstack/react-query",
+            "npm:@tanstack/react-query-devtools"
+          ]
+        },
+        {
+          "file": "src/pages/SignInPage.tsx",
+          "hash": "12813774949251393127",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/pages/SignUpPage.tsx",
+          "hash": "15658988377797397123",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "src/services/authService.ts",
+          "hash": "2244512730813799227"
+        },
+        {
+          "file": "src/services/googleAuthService..ts",
+          "hash": "6636172281195666804"
+        },
+        {
+          "file": "src/services/userService.ts",
+          "hash": "1639761978780576579"
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "10103544627402899306"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "2346798718762947195",
+          "deps": [
+            "npm:tailwindcss-animate"
+          ]
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "6671581860431718916"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "10731327959317677335"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "11569345746867643185"
+        },
+        {
+          "file": "vite.config.ts",
+          "hash": "7785601346798741640",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        },
+        {
+          "file": "yarn.lock",
+          "hash": "10513389495371591291"
+        }
+      ]
+    }
+  }
+}
