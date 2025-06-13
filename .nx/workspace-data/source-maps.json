@@ -1,4 +1,310 @@
 {
+  "my-tailwind-app": {
+    "root": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "projectType": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.options": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.cache": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.inputs": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.outputs": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.executor": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.options.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata.technologies": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata.technologies.0": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata.description": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata.help": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata.help.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.build.metadata.help.example": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.options": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.executor": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.options.cwd": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.options.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata.technologies": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata.technologies.0": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata.description": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata.help": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata.help.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve.metadata.help.example": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.dependsOn": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.options": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.executor": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.options.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve-static": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve-static.options": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.cache": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.inputs": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.options": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.executor": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.options.cwd": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.options.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.description": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.help": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.help.command": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.typecheck.metadata.help.example": [
+      "my-tailwind-app/vite.config.ts",
+      "@nx/vite/plugin"
+    ],
+    "targets.lint": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "my-tailwind-app/eslint.config.js",
+      "@nx/eslint/plugin"
+    ]
+  },
   ".": {
     "root": [
       "project.json",
@@ -331,312 +637,6 @@
     "targets.serve.options.buildTarget": [
       "project.json",
       "nx/core/project-json"
-    ]
-  },
-  "my-tailwind-app": {
-    "root": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "projectType": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.options": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.cache": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.dependsOn": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.inputs": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.outputs": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.executor": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.options.cwd": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.options.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.technologies": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.technologies.0": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.description": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.help": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.help.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.build.metadata.help.example": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.options": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.executor": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.options.cwd": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.options.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata.technologies": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata.technologies.0": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata.description": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata.help": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata.help.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve.metadata.help.example": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.dependsOn": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.options": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.executor": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.options.cwd": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.options.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata.technologies": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata.technologies.0": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata.description": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata.help": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata.help.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.preview.metadata.help.example": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve-static": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve-static.executor": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve-static.options": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve-static.options.buildTarget": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.serve-static.options.spa": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.cache": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.inputs": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.options": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.metadata": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.executor": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.options.cwd": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.options.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.metadata.description": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.metadata.help": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.metadata.help.command": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.typecheck.metadata.help.example": [
-      "my-tailwind-app/vite.config.ts",
-      "@nx/vite/plugin"
-    ],
-    "targets.lint": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "my-tailwind-app/eslint.config.js",
-      "@nx/eslint/plugin"
     ]
   }
 }
